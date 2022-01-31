@@ -1,0 +1,129 @@
+/*-------------------------
+#.header area
+--------------------------*/
+.header-area {
+    .header-top {
+        padding: 2rem 0;
+        background-color: #08173D;
+        .header-top-left {
+            .today-date {
+                margin: 0;
+                font-family: $titleFont;
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: #EEEEEE;
+                .icon {
+                    font-size: 2.5rem;
+                    color: var(--primary-color);
+                    margin-right: 1.5rem;
+                }
+                span {
+                    display: inline-block;
+                    font-weight: 700;
+                    margin-left: .5rem;
+                }
+            }
+        }
+        .header-top-right {
+            .social-media {
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    margin-right: 2rem;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    a {
+                        display: inline-block;
+                        img {
+                            max-width: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-bottom {
+        padding: 1.5rem 0;
+        background-color: var(--white);
+        .navbar {
+            padding: 0;
+            .navbar-nav {
+                .nav-item {
+                    margin-right: 1.8rem;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    .nav-link {
+                        font-family: $titleFont;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        color: var(--bColor);
+                        transition: $transition;
+                        &:hover {
+                            color: var(--primary-color);
+                        }
+                        &.active {
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        width: 4rem;
+        height: 4rem;
+        padding: 0;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        font-size: 1.8rem;
+        box-shadow: none;
+        transition: $transition;
+        &:hover {
+            color: var(--white);
+            background-color: var(--primary-color);
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .header-area .header-bottom .navbar .navbar-nav .nav-item {
+        margin-right: 1rem;
+    }
+}
+@media (max-width: 1199px) {
+    .header-area .header-bottom .navbar .navbar-nav {
+        margin-top: 3rem;
+    }
+    .header-area .header-bottom .navbar .navbar-nav .nav-item {
+        margin-right: 0;
+        margin: .8rem 0;
+    }
+    .header-area .header-bottom .navbar .navbar-nav .nav-item .nav-link {
+        padding: 0;
+    }
+    .header-area .header-bottom {
+        padding: 1rem 0;
+    }
+}
+@media (max-width: 991px) {
+    .header-area .header-top {
+        padding: 1.5rem 0;
+    }
+    
+}
+@media (max-width: 767px) {
+    .header-area .header-top .header-top-left .today-date {
+        margin-bottom: 1rem;
+    }
+    .header-area .header-top .header-top-left .today-date .icon {
+        font-size: 1.8rem;
+        margin-right: 1rem;
+    }
+    .header-area .navbar-brand img {
+        max-width: 16rem;
+    }
+}

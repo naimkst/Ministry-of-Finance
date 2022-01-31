@@ -1,0 +1,99 @@
+/*-------------------------
+#.news-area
+--------------------------*/
+.news-area {
+    .single-news {
+        margin-bottom: 3rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        background-color: var(--white);
+        .news-thumbnail {
+            a {
+                display: block;
+                position: relative;
+                border-radius: 1rem;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    transition: $transition;
+                }
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0, .68);
+                    left: 0;
+                    top: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: $transition;
+                    z-index: 1;
+                }
+            }
+        }
+        .news-info {
+            padding: 2.5rem 1.5rem;
+            .date {
+                display: inline-block;
+                margin-bottom: 2rem;
+                font-family: $titleFont;
+                font-size: 1.6rem;
+                font-weight: 700;
+                color: var(--color-one);
+            }
+            .news-title {
+                margin-bottom: 2rem;
+                font-family: $titleFont;
+                font-size: 2.4rem;
+                line-height: 3.5rem;
+                font-weight: 600;
+                color: var(--color-one);
+                a {
+                    color: var(--color-one);
+                    transition: $transition;
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+            .readmore-btn {
+                font-family: $titleFont;
+                font-size: 1.6rem;
+                font-weight: 700;
+                text-transform: capitalize;
+                color: var(--color-one);
+                transition: $transition;
+                i {
+                    font-size: 1.2rem;
+                    margin-left: .6rem;
+                }
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
+        &:hover {
+            .news-thumbnail {
+                a {
+                   
+                    img {
+                        transform: scale(1.1);
+                    }
+                    &::before {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .news-area .single-news .news-info .news-title {
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+}

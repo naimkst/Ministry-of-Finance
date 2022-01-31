@@ -1,0 +1,44 @@
+/*-------------------------
+#.section-header
+--------------------------*/
+.section-header {
+    .title {
+        margin-bottom: 1rem;
+        font-family: $titleFont;
+        font-size: 4.2rem;
+        line-height: 5.5rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--color-one);
+    }
+    .sub-title {
+        max-width: 36rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        color: var(--black);
+        margin: 0 auto;
+    }
+    &.border-left {
+        .title {
+            position: relative;
+            padding-left: 2.5rem;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 5px;
+                height: 100%;
+                background: var(--primary-color);
+                left: 0;
+                top: 0;
+                border-radius: .8rem;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .section-header .title {
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+    }
+}

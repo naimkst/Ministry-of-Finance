@@ -1,0 +1,47 @@
+/*
+------------- Table of content ----------------
+
+Template Name: Mof Responsive HTML5 Template
+Template URI: http://mof.com
+Description: Mof Responsive HTML5 Template
+Author: Gobinda Sarkar
+Author URI: http://mof.com
+Version: 1.0
+
+---------------------- common content ----------
+1.body reset content
+#.header-area
+#.footer-area
+#.hero-area
+#.service-area
+#.section-header
+#.news-area
+#.departments-working-area
+#.e-services-area
+
+*/
+
+/*-------------------------
+#.e-services-area
+--------------------------*/
+
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// component content
+@import "section/header/header";
+@import "section/footer-area/footer-area";
+@import "section/hero-area/hero-area";
+@import "section/service-area/service-area";
+@import "section/section-header/section-header";
+@import "section/news-area/news-area";
+@import "section/departments-working-area/departments-working-area";
+@import "section/e-services-area/e-services-area";
+
+// page content

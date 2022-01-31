@@ -1,0 +1,44 @@
+/*-------------------------
+#.departments-working-area
+--------------------------*/
+.departments-working-area {
+    .single-department {
+        margin-bottom: 3rem;
+        background: var(--white);
+        border-radius: 1rem;
+        overflow: hidden;
+        .department-thumbnail {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .department-info {
+            padding: 2.5rem 1.5rem;
+            .department-title {
+                margin: 0;
+                font-size: 2.4rem;
+                font-weight: 600;
+                color: var(--color-one);
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: var(--color-one);
+                    transition: $transition;
+                    .icon {
+                        font-size: 1.6rem;
+                    }
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .departments-working-area .single-department .department-info .department-title {
+        font-size: 2rem;
+    }
+}

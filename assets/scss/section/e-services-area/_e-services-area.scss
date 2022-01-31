@@ -1,0 +1,119 @@
+/*-------------------------
+#.e-services-area
+--------------------------*/
+.e-services-area {
+    background: url('../images/e-services-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .single-e-service {
+        display: flex;
+        padding: 3rem 2rem;
+        border-radius: .5rem;
+        background: var(--white);
+        margin-bottom: 1.6rem;
+        .service-icon {
+            margin-right: 2rem;
+            i {
+                color: var(--primary-color);
+                &::before {
+                    font-size: 6rem;
+                }
+            }
+        }
+        .service-info {
+            h3 {
+                margin-bottom: 1.5rem;
+                font-size: 2.4rem;
+                font-weight: 700;
+                color: var(--color-one);
+            }
+            p {
+                margin: 0;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                font-weight: 400;
+                color: var(--bColor);
+            }
+        }
+    }
+    .e-service-wrap {
+        padding: 2.5rem;
+        background: rgba(7, 22, 61, 0.9);
+        .single-box {
+            padding: 3rem 0;
+            .icon {
+                margin-bottom: 1rem;
+                i {
+                    color: var(--primary-color);
+                    &::before {
+                        font-size: 6rem;
+                    }
+                }
+            }
+            .single-box-title {
+                margin-bottom: 1rem;
+                font-family: $titleFont;
+                font-size: 2.4rem;
+                font-weight: 500;
+                color: var(--white);
+            }
+            .single-box-subtitle {
+                margin: 0;
+                font-family: $titleFont;
+                font-size: 4rem;
+                font-weight: 500;
+                color: var(--white);
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.e-services-area .single-e-service .service-info h3 {
+        font-size: 2rem;
+    }
+    .e-services-area .single-e-service .service-icon {
+        margin-right: 1.5rem;
+    }
+    .e-services-area .single-e-service .service-icon i::before {
+        font-size: 4rem;
+    }
+    .e-services-area .e-service-wrap .single-box .single-box-subtitle {
+        font-size: 3rem;
+    }
+    .e-services-area .e-service-wrap .single-box .single-box-title {
+        font-size: 2rem;
+    }
+}
+@media  (max-width: 767px) {
+    .e-services-area .e-service-wrap .single-box .single-box-subtitle {
+        font-size: 3rem;
+    }
+    .e-services-area .e-service-wrap .single-box .single-box-title {
+        font-size: 2rem;
+    }
+}
+@media  (max-width: 480px) {
+	.e-services-area .single-e-service .service-info h3 {
+        font-size: 2rem;
+    }
+    .e-services-area .single-e-service .service-icon {
+        margin-right: 1.5rem;
+    }
+    .e-services-area .single-e-service .service-icon i::before {
+        font-size: 4rem;
+    }
+    .e-services-area .e-service-wrap .single-box .single-box-subtitle {
+        font-size: 1.6rem;
+    }
+    .e-services-area .e-service-wrap .single-box .single-box-title {
+        font-size: 1.4rem;
+    }
+    .e-services-area .e-service-wrap .single-box {
+        padding: 1.5rem 0;
+    }
+    .e-services-area .e-service-wrap .single-box .icon i::before {
+        font-size: 4rem;
+    }
+}
